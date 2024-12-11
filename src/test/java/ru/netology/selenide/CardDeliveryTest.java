@@ -18,7 +18,7 @@ public class CardDeliveryTest {
     }
 
     @Test
-    void shouldCheckPositiveCase() throws InterruptedException {
+    void shouldCheckPositiveCase() {
 
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Краснодар");
