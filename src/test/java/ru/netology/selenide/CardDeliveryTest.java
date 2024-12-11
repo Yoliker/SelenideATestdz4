@@ -30,9 +30,9 @@ public class CardDeliveryTest {
         $("[data-test-id=phone] input").setValue("+78230000000");
         $("[data-test-id=agreement]").click();
         $(".button").click();
-        $("[data-test-id=notification]")
+        $(".notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.text("Успешно! \n Встреча успешно забронирована на " + newDate));
+                .shouldHave(Condition.text("Встреча успешно забронирована на " + newDate));
 
     }
 
